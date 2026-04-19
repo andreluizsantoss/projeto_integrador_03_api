@@ -1,0 +1,19 @@
+# compiled output
+/dist
+
+# node_modules
+/node_modules
+
+# IDE - VSCode
+# .vscode/*
+!.vscode/settings.json
+
+# ENV
+.env
+
+# LOGGER
+/logs
+
+# Documents
+.agent/
+.ia/
