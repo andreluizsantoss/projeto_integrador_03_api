@@ -23,6 +23,7 @@
   "homepage": "https://github.com/andreluizsantoss/projeto_integrador_03_api#readme",
   "dependencies": {
     "express": "^5.2.1",
-    "express-async-errors": "^3.1.1"
+    "express-async-errors": "^3.1.1",
+    "typeorm": "^0.3.28"
   }
 }
