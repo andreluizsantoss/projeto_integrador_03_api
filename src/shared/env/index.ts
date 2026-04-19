@@ -2,7 +2,9 @@ import 'dotenv/config';
 import { z } from 'zod';
 
 const envSchema = z.object({
-  NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
+  NODE_ENV: z
+    .enum(['development', 'production', 'test'])
+    .default('development'),
   PORT: z.coerce.number().default(3000),
 
   DB_HOST: z.string(),
@@ -18,11 +20,13 @@ const envSchema = z.object({
   REFRESH_TOKEN_EXPIRES_IN: z.string().default('7d'),
 });
 
-const parsed = envSchema.safeParse(process.env);
+const _env = envSchema.safeParse(process.env);
 
-if (!parsed.success) {
-  console.error('Invalid environment variables:', parsed.error.flatten().fieldErrors);
-  process.exit(1);
+if (_env.success === false) {
+  const errorMessage = '❌ Invalid environment variables';
+  const formattedError = _env.error.format();
+  console.error(errorMessage, formattedError);
+  throw new Error(errorMessage);
 }
 
-export const env = parsed.data;
+export const env = _env.data;

@@ -5,6 +5,6 @@ import { initializeDatabase } from '@shared/infra/database/data-source';
 
 initializeDatabase().then(() => {
   app.listen(env.PORT, () => {
-    logger.info(`Server started on port ${env.PORT}!`);
+    logger.info(`🚀 Server started on port ${env.PORT}!`);
   });
 });
