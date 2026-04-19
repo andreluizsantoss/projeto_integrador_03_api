@@ -12,5 +12,16 @@
   "type": "commonjs",
   "directories": {
     "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreluizsantoss/projeto_integrador_03_api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreluizsantoss/projeto_integrador_03_api/issues"
+  },
+  "homepage": "https://github.com/andreluizsantoss/projeto_integrador_03_api#readme",
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
