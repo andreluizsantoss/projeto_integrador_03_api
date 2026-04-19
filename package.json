@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
