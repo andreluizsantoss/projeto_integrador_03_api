@@ -33,6 +33,7 @@
     "tsyringe": "^4.10.0",
     "typeorm": "^0.3.28",
     "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
     "zod": "^4.3.6"
   }
 }
