@@ -1,18 +1,10 @@
-import { app } from './app';
-import { initializeDatabase } from '@shared/infra/database/data-source';
 import { logger } from '@shared/logger/logger';
+import { app } from './app';
 import { env } from '@shared/env';
+import { initializeDatabase } from '@shared/infra/database/data-source';
 
-async function bootstrap(): Promise<void> {
-  await initializeDatabase();
-  logger.info('Database connected successfully');
-
+initializeDatabase().then(() => {
   app.listen(env.PORT, () => {
-    logger.info(`Server running on port ${env.PORT} [${env.NODE_ENV}]`);
+    logger.info(`Server started on port ${env.PORT}!`);
   });
-}
-
-bootstrap().catch(err => {
-  logger.error('Failed to start server', err);
-  process.exit(1);
 });
