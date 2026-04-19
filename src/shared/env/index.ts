@@ -24,8 +24,7 @@ const _env = envSchema.safeParse(process.env);
 
 if (_env.success === false) {
   const errorMessage = '❌ Invalid environment variables';
-  const formattedError = _env.error.format();
-  console.error(errorMessage, formattedError);
+  console.error(errorMessage, z.treeifyError(_env.error));
   throw new Error(errorMessage);
 }
 
