@@ -70,6 +70,6 @@
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
     "typeorm-model-generator": "^0.4.6",
-    "typescript": "^6.0.3"
+    "typescript": "^5.9.3"
   }
 }
