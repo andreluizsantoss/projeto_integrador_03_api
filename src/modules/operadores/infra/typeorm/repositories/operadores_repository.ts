@@ -22,6 +22,7 @@ export class OperadoresRepository implements IOperadoresRepository {
     return operadores.map(op => ({
       idOperador: op.idOperador,
       nome: op.nome,
+      idEmpresa: op.idEmpresa2?.idEmpresa ?? null,
       nomeEmpresa: op.idEmpresa2?.nome ?? null,
     }))
   }
