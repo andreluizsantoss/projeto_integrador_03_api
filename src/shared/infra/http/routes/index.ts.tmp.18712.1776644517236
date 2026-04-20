@@ -1,6 +1,0 @@
-import { Router } from 'express'
-import authenticateRouter from '@authenticate/infra/http/routes/authenticate_routes'
-
-export const routes = Router()
-
-routes.use('/auth', authenticateRouter)
