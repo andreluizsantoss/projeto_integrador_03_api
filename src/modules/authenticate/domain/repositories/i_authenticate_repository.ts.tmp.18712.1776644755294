@@ -1,6 +1,0 @@
-import { Operador } from '@shared/infra/database/entities/Operador'
-
-export interface IAuthenticateRepository {
-  findOperadorByNome(nome: string): Promise<Operador | null>
-  findOperadorById(id: number): Promise<Operador | null>
-}
