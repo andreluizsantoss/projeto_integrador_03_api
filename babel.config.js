@@ -13,6 +13,7 @@ module.exports = {
         alias: {
           '@shared': './src/shared',
           '@modules': './src/modules',
+          '@authenticate': './src/modules/authenticate',
         },
       },
     ],
