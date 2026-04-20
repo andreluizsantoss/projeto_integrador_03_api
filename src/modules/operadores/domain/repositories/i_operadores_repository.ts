@@ -1,5 +1,9 @@
-import { Operador } from '@shared/infra/database/entities/Operador'
+export interface IOperadorListItem {
+  idOperador: number
+  nome: string | null
+  nomeEmpresa: string | null
+}
 
 export interface IOperadoresRepository {
-  listAll(): Promise<Pick<Operador, 'idOperador' | 'nome'>[]>
+  listAll(): Promise<IOperadorListItem[]>
 }
