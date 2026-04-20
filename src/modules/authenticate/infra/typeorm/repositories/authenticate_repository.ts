@@ -1,5 +1,5 @@
 import { AppDataSource } from '@shared/infra/database/data-source'
-import { Operador } from '@modules/operadores/infra/typeorm/entities/Operador'
+import { Operador } from '@shared/infra/database/entities/Operador'
 import { IAuthenticateRepository } from '@authenticate/domain/repositories/i_authenticate_repository'
 import { Repository } from 'typeorm'
 

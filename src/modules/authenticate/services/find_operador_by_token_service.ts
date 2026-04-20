@@ -1,5 +1,5 @@
 import { inject, injectable } from 'tsyringe'
-import { Operador } from '@modules/operadores/infra/typeorm/entities/Operador'
+import { Operador } from '@shared/infra/database/entities/Operador'
 import { IAuthenticateRepository } from '@authenticate/domain/repositories/i_authenticate_repository'
 import { UserNotFoundError } from '@shared/errors/UserNotFoundError'
 

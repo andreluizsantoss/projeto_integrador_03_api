@@ -7,8 +7,8 @@ import {
   OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Operador } from '../../../../operadores/infra/typeorm/entities/Operador';
-import { Maquina } from '../../../../maquinas/infra/typeorm/entities/Maquina';
+import { Operador } from './Operador';
+import { Maquina } from './Maquina';
 import { Turno } from './Turno';
 import { RespostaChecklist } from './RespostaChecklist';
 

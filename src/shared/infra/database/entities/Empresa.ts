@@ -1,6 +1,6 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { Maquina } from '../../../../maquinas/infra/typeorm/entities/Maquina';
-import { Operador } from '../../../../operadores/infra/typeorm/entities/Operador';
+import { Maquina } from './Maquina';
+import { Operador } from './Operador';
 
 @Entity('empresa', { schema: 'db_projeto_integrador_03' })
 export class Empresa {

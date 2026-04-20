@@ -7,8 +7,8 @@ import {
   OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Checklist } from '../../../../checklists/infra/typeorm/entities/Checklist';
-import { Empresa } from '../../../../empresas/infra/typeorm/entities/Empresa';
+import { Checklist } from './Checklist';
+import { Empresa } from './Empresa';
 
 @Index('id_empresa', ['idEmpresa'], {})
 @Entity('maquina', { schema: 'db_projeto_integrador_03' })
